@@ -7,65 +7,40 @@
 4. Difference between React and Angular?
 5. What is Virtual DOM?
 
-✅ Components & Props
+## ✅ Components & Props
+6. Functional vs Class components
+7. What are props?
+8. Can we modify props? Why?
+9. What is prop drilling?
+10. How to avoid prop drilling?
 
-Functional vs Class components
+## ✅ State & Hooks
+11. What is state?
+12. Difference between state and props
+13. What is useState?
+14. What is useEffect?
+15. useEffect dependency array?
+16. useEffect vs componentDidMount
+17. What is useRef?
+18. What is useMemo?
+19. useCallback vs useMemo
+20.What are custom hooks?
 
-What are props?
+## ✅ Performance & Optimization
+21. Why key is important in list rendering?
+22. What is memo?
+23. React.lazy & Suspense
+24. How to optimize React app?
+25. Controlled vs Uncontrolled components
 
-Can we modify props? Why?
+## ✅ Routing & API
+26. What is React Router?
+27. useParams & useNavigate
+28. How API call is made in React?
+29. Axios vs Fetch
+30. How to handle loading & error state?
 
-What is prop drilling?
-
-How to avoid prop drilling?
-
-✅ State & Hooks
-
-What is state?
-
-Difference between state and props
-
-What is useState?
-
-What is useEffect?
-
-useEffect dependency array?
-
-useEffect vs componentDidMount
-
-What is useRef?
-
-What is useMemo?
-
-useCallback vs useMemo
-
-What are custom hooks?
-
-✅ Performance & Optimization
-
-Why key is important in list rendering?
-
-What is memo?
-
-React.lazy & Suspense
-
-How to optimize React app?
-
-Controlled vs Uncontrolled components
-
-✅ Routing & API
-
-What is React Router?
-
-useParams & useNavigate
-
-How API call is made in React?
-
-Axios vs Fetch
-
-How to handle loading & error state?
-
-🟢 NODE JS INTERVIEW QUESTIONS
+### 🟢 NODE JS INTERVIEW QUESTIONS
 ✅ Basics
 
 What is Node.js?

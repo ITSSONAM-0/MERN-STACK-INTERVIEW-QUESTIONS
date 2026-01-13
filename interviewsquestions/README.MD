@@ -40,173 +40,103 @@
 29. Axios vs Fetch
 30. How to handle loading & error state?
 
-### 🟢 NODE JS INTERVIEW QUESTIONS
-✅ Basics
-
-What is Node.js?
-
-Is Node single-threaded?
-
-How Node handles multiple requests?
-
-What is V8 engine?
-
-What is event loop?
-
-✅ Event Loop & Async
-
-What is callback?
-
-Callback hell?
-
-Promise vs async/await
-
-Microtask vs Macrotask queue
-
-What is non-blocking I/O?
-
-✅ Core Concepts
-
-What is middleware?
-
-What is REPL?
-
-What is stream?
-
-What is buffer?
-
-What is clustering?
-
-✅ Security & Performance
-
-How to secure Node app?
-
-What is rate limiting?
-
-How to handle errors globally?
-
-What is CORS?
-
-How to improve Node performance?
-
-🚀 EXPRESS JS INTERVIEW QUESTIONS
-✅ Basics
-
-What is Express.js?
-
-Why Express over Node?
-
-What is app.use()?
-
-What is req & res?
-
-✅ Middleware
-
-Types of middleware
-
-Custom middleware?
-
-Error-handling middleware
-
-Difference between app.use & app.get
-
-Order of middleware execution
-
-✅ Routing & API
-
-REST API principles
-
-GET vs POST vs PUT vs PATCH
-
-What is status code?
-
-What is req.params vs req.query vs req.body?
-
-What is MVC architecture?
-
-✅ Auth & Security
-
-How authentication works?
-
-What is JWT?
-
-JWT vs Session
-
-How to protect routes?
-
-What is helmet?
-
-🍃 MONGODB INTERVIEW QUESTIONS
-✅ Basics
-
-What is MongoDB?
-
-SQL vs NoSQL
-
-What is document?
-
-What is collection?
-
-BSON vs JSON
-
-✅ Schema & Query
-
-What is Mongoose?
-
-Schema vs Model
-
-What is populate?
-
-findOne vs findById
-
-What is projection?
-
-✅ Indexing & Performance
-
-What is index?
-
-Why indexing improves speed?
-
-Types of indexes
-
-What is aggregation?
-
-What is pipeline?
-
-✅ Advanced
-
-What is replica set?
-
-Sharding?
-
-ACID properties in MongoDB?
-
-How to handle large data?
-
-How to design schema for scalability?
-
-🔐 AUTHENTICATION (VERY IMPORTANT)
-
-Login flow using JWT
-
-Access token vs Refresh token
-
-Where to store JWT?
-
-How to handle logout?
-
-Role-based authentication
-
-🧠 PROJECT-BASED QUESTIONS (MUST PREPARE)
-
-Explain your MERN project architecture
-
-Biggest challenge you faced?
-
-How frontend connects to backend?
-
-How database schema designed?
-
-How errors handled?
-
-How will you scale your app for 1M users?
+## 🟢 NODE JS INTERVIEW QUESTIONS
+# ✅ Basics
+1. What is Node.js?
+2. Is Node single-threaded?
+3. How Node handles multiple requests?
+4. What is V8 engine?
+5. What is event loop?
+
+# ✅ Event Loop & Async
+6. What is callback?
+7. Callback hell?
+8. Promise vs async/await
+9. Microtask vs Macrotask queue
+10.What is non-blocking I/O?
+
+# ✅ Core Concepts
+11. What is middleware?
+12. What is REPL?
+13. What is stream?
+14. What is buffer?
+15. What is clustering?
+
+# ✅ Security & Performance
+16. How to secure Node app?
+17. What is rate limiting?
+18. How to handle errors globally?
+19. What is CORS?
+20. How to improve Node performance?
+
+## 🚀 EXPRESS JS INTERVIEW QUESTIONS
+# ✅ Basics
+21. What is Express.js?
+22. Why Express over Node?
+23. What is app.use()?
+24. What is req & res?
+
+# ✅ Middleware
+25. Types of middleware
+26. Custom middleware?
+27. Error-handling middleware
+28. Difference between app.use & app.get
+29. Order of middleware execution
+
+# ✅ Routing & API
+30. REST API principles
+31. GET vs POST vs PUT vs PATCH
+32. What is status code?
+33. What is req.params vs req.query vs req.body?
+34. What is MVC architecture?
+
+# ✅ Auth & Security
+35. How authentication works?
+36. What is JWT?
+37. JWT vs Session
+38. How to protect routes?
+39. What is helmet?
+
+## 🍃 MONGODB INTERVIEW QUESTIONS
+# ✅ Basics
+1. What is MongoDB?
+2. SQL vs NoSQL
+3. What is document?
+4. What is collection?
+5. BSON vs JSON
+
+# ✅ Schema & Query
+6. What is Mongoose?
+7. Schema vs Model
+8. What is populate?
+9. findOne vs findById
+10. What is projection?
+
+# ✅ Indexing & Performance
+11. What is index?
+12. Why indexing improves speed?
+13. Types of indexes
+14. What is aggregation?
+15. What is pipeline?
+
+# ✅ Advanced
+16. What is replica set?
+17. Sharding?
+17. ACID properties in MongoDB?
+18. How to handle large data?
+19. How to design schema for scalability?
+
+# 🔐 AUTHENTICATION (VERY IMPORTANT)
+20. Login flow using JWT
+21. Access token vs Refresh token
+22. Where to store JWT?
+23. How to handle logout?
+34. Role-based authentication
+
+##🧠 PROJECT-BASED QUESTIONS (MUST PREPARE)
+1. Explain your MERN project architecture
+2. Biggest challenge you faced?
+3. How frontend connects to backend?
+4. How database schema designed?
+5. How errors handled?
+6. How will you scale your app for 1M users?

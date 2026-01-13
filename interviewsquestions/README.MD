@@ -1,4 +1,4 @@
-## 🔥 MERN STACK INTERVIEW QUESTIONS (COMPLETE LIST)
+## 🔥 MERN STACK INTERVIEW QUESTIONS 
 # ⚛️ REACT JS INTERVIEW QUESTIONS
 # ✅ Basics
 1. What is React?
@@ -40,7 +40,7 @@
 29. Axios vs Fetch
 30. How to handle loading & error state?
 
-## 🟢 NODE JS INTERVIEW QUESTIONS
+# 🟢 NODE JS INTERVIEW QUESTIONS
 # ✅ Basics
 1. What is Node.js?
 2. Is Node single-threaded?

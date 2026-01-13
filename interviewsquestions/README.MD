@@ -69,7 +69,7 @@
 19. What is CORS?
 20. How to improve Node performance?
 
-## 🚀 EXPRESS JS INTERVIEW QUESTIONS
+# 🚀 EXPRESS JS INTERVIEW QUESTIONS
 # ✅ Basics
 21. What is Express.js?
 22. Why Express over Node?
@@ -97,7 +97,7 @@
 38. How to protect routes?
 39. What is helmet?
 
-## 🍃 MONGODB INTERVIEW QUESTIONS
+# 🍃 MONGODB INTERVIEW QUESTIONS
 # ✅ Basics
 1. What is MongoDB?
 2. SQL vs NoSQL
@@ -133,7 +133,7 @@
 23. How to handle logout?
 34. Role-based authentication
 
-##🧠 PROJECT-BASED QUESTIONS (MUST PREPARE)
+# 🧠 PROJECT-BASED QUESTIONS (MUST PREPARE)
 1. Explain your MERN project architecture
 2. Biggest challenge you faced?
 3. How frontend connects to backend?

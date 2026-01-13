@@ -1,0 +1,3 @@
+Q1. What is React?
+
+React is an open-source JavaScript library used for building fast and interactive user interfaces, mainly for single-page applications. It was developed by Facebook. React follows a component-based architecture, where the UI is divided into small reusable components. Each component manages its own state, which makes the application easier to debug and maintain. React uses a Virtual DOM instead of directly updating the real DOM, which improves performance. When data changes, React updates only the required part of the UI instead of reloading the whole page. This makes applications faster and more efficient. React is widely used because it is flexible, scalable, and works well with other libraries and frameworks.

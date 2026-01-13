@@ -2,7 +2,7 @@
 
 ![Project Demo](logo2.jpg)
 
-![Project Demo](image.jpg)
+![Project Demo](image.png)
 
 
 

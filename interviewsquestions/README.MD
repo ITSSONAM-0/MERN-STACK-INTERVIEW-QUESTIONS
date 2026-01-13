@@ -1,8 +1,8 @@
 ![Project Demo](logo1.png)
 
-![Project Demo](logo2.png)
+![Project Demo](logo2.jpg)
 
-![Project Demo](image.png)
+![Project Demo](image.jpg)
 
 
 

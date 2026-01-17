@@ -38,3 +38,44 @@ Role: JavaScript ko server par run karna
 - Non-blocking
 - Single-threaded but scalable
 - Fast API handling
+
+
+# 🚀 3️⃣ EXPRESS JS (BACKEND FRAMEWORK)
+Role: API banana + routing + middleware
+
+# 📌 Process:
+1. Express server request receive karta hai
+2. Middleware run hota hai:
+  -  body parser
+  -  auth (JWT)
+  -  ogging
+4. Request correct route par jaati hai
+  - 👉 /api/login, /api/order
+5. Controller function execute hota hai
+6. MongoDB se data mangta / save karta hai
+7. Response JSON me React ko bhejta hai
+
+# 🧠 Important Points:
+- Express = bridge between React & MongoDB
+- REST API principles follow karta hai
+
+# 🍃 4️⃣ MONGODB (DATABASE PROCESS)
+Role: Data store karna (NoSQL)
+# 📌 Process:
+1.Express → Mongoose ke through MongoDB se connect
+2. Schema define hota hai
+ - 👉 User, Order, Product
+3. CRUD operations perform hote hain:
+ - Create
+ - Read
+ - Update
+ - Delete
+4. MongoDB JSON-like documents me data store karta hai
+5. Result backend ko return hota hai
+
+# 🧠 Important Points:
+- Schema flexible
+- Fast read/write
+- Scalable
+
+

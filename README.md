@@ -163,7 +163,7 @@ src/
   # 🔹 MVC Architecture
   ```
   Routes → Controllers → Services → Models
-```
+  ```
 # 🔹 Responsibilities
 - API routing
 - Business logic
@@ -171,3 +171,59 @@ src/
 - Validation
 - Error handling
 
+# 🍃 5️⃣ DATABASE DESIGN (MongoDB)
+🔹 Collections
+```
+User
+Product
+Order
+Payment
+```
+# 🔹 Sample Schema
+```
+User {
+  name,
+  email,
+  password,
+  role
+}
+
+Order {
+  userId,
+  items[],
+  totalPrice,
+  status
+}
+```
+# 🔹 Login Flow
+```
+Login Request
+↓
+Verify User (MongoDB)
+↓
+Generate JWT
+↓
+Send Token to Client
+↓
+Store Token
+↓
+Protected APIs Access
+```
+# 🔹 Security
+- Password hashing (bcrypt)
+- Token expiration
+- Protected routes middleware
+
+# ⚡ 7️⃣ SCALABILITY & PERFORMANCE
+🔹 Backend
+- Caching (Redis – concept)
+- Rate limiting
+- Pagination
+- Load balancer (future)
+
+🔹 Database
+- Indexing
+- Sharding (large scale)
+
+# INTERVIEW READY ANSWER
+“My MERN project follows a layered architecture. React handles UI and communicates with Node and Express via REST APIs. Express manages routing and middleware, Node executes business logic asynchronously, and MongoDB stores data in collections. JWT is used for authentication. The system is designed to be scalable, secure, and modular.”

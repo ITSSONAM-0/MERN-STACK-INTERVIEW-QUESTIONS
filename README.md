@@ -62,8 +62,8 @@ Role: API banana + routing + middleware
 # 🍃 4️⃣ MONGODB (DATABASE PROCESS)
 Role: Data store karna (NoSQL)
 # 📌 Process:
-1.Express → Mongoose ke through MongoDB se connect
-2.Schema define hota hai
+1. Express → Mongoose ke through MongoDB se connect
+2. Schema define hota hai
  - 👉 User, Order, Product
 3. CRUD operations perform hote hain:
  - Create

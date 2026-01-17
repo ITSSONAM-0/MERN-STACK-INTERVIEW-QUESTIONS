@@ -1,0 +1,25 @@
+# 🧩 OVERALL FLOW
+```scss
+User → React (Frontend) → Node + Express (Backend API)
+     → MongoDB (Database)
+     ← Response (JSON)
+     ← React UI Update
+```
+# ⚛️ 1️⃣ REACT JS (FRONTEND PROCESS)
+Role: User Interface (UI)
+# 📌 Process:
+1. User browser me website open karta hai
+2. React app load hoti hai (components render hote hain)
+3. User koi action karta hai
+.   👉 login, signup, add to cart, order food
+4. React API request bhejta hai backend ko
+fetch / axios
+GET / POST / PUT / DELETE
+5. Response aane par:
+state update hota hai
+UI automatically re-render hoti hai
+
+# # 🧠 Important Points:
+- React sirf data show karta hai
+- Direct database access ❌
+- Backend se JSON data aata hai

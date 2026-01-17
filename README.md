@@ -23,3 +23,18 @@ UI automatically re-render hoti hai
 - React sirf data show karta hai
 - Direct database access ❌
 - Backend se JSON data aata hai
+
+
+# 🟢 2️⃣ NODE JS (BACKEND RUNTIME)
+Role: JavaScript ko server par run karna
+
+# 📌 Process:
+1. Node server start hota hai (node index.js)
+2. Client (React) se request aati hai
+3. Node request ko handle karta hai asynchronously
+4. Event loop multiple users ko efficiently handle karta hai
+
+# 🧠 Important Points:
+- Non-blocking
+- Single-threaded but scalable
+- Fast API handling

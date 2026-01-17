@@ -79,3 +79,95 @@ Role: Data store karna (NoSQL)
 - Scalable
 
 
+# 🔐 AUTHENTICATION FLOW
+```User Login
+↓
+React → POST /login
+↓
+Express verifies user
+↓
+MongoDB checks credentials
+↓
+JWT Token generated
+↓
+Token → React
+↓
+Token stored (localStorage / cookie)
+↓
+Protected API access
+```
+
+# FULL REQUEST–RESPONSE FLOW
+React UI → API call → Node server → Express route → MongoDB → JSON response → React state update → UI change
+
+# 🎯 INTERVIEW READY ANSWER
+“React handles UI, Node runs backend logic, Express manages APIs and routing, and MongoDB stores data. React communicates with backend via REST APIs, backend processes requests and interacts with database, then sends JSON response back to frontend.”
+
+
+# 🧠 1️⃣ HIGH LEVEL DESIGN (HLD)
+🔹 Components
+```
+Client (React)
+   ↓ HTTP/HTTPS
+Backend (Node + Express)
+   ↓
+Database (MongoDB)
+```
+# 🔹 HLD Explanation
+- React handles UI & user interaction
+- Backend exposes REST APIs
+- MongoDB stores users, products, orders
+- Communication happens via JSON
+
+# 🧩 2️⃣ LOW LEVEL DESIGN
+🔹 Request–Response Flow
+```
+User Action (Order Food)
+↓
+React Component
+↓
+Axios / Fetch API
+↓
+Express Route
+↓
+Controller
+↓
+Service Layer
+↓
+MongoDB (Mongoose)
+↓
+Response (JSON)
+↓
+React State Update
+↓
+UI Update
+```
+# ⚛️ 3️⃣ FRONTEND DESIGN (React)
+🔹 Folder Structure
+```
+src/
+ ├── components/
+ ├── pages/
+ ├── services/ (API calls)
+ ├── context/ or redux/
+ ├── hooks/
+ ├── utils/
+```
+# 🔹 Responsibilities
+- UI Rendering
+- Form validation
+- API calls
+- State management
+- Error handling
+
+  # 🔹 MVC Architecture
+  ```
+  Routes → Controllers → Services → Models
+```
+# 🔹 Responsibilities
+- API routing
+- Business logic
+- Authentication
+- Validation
+- Error handling
+

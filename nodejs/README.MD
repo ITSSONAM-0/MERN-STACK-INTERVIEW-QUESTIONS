@@ -48,3 +48,130 @@ fs.readFile("file.txt", () => {
   console.log("File read");
 });
 ```
+# 7️⃣ What is Callback Hell?
+Callback hell happens when:
+ - Too many nested callbacks
+ - Code becomes unreadable and hard to maintain
+Example:
+```
+a(() => {
+  b(() => {
+    c(() => {
+      d();
+    });
+  });
+});
+```
+# 8️⃣ Promise vs async/await
+| Promise                  | async/await                 |
+| ------------------------ | --------------------------- |
+| `.then()` and `.catch()` | Looks like synchronous code |
+| Harder to read           | Easier to understand        |
+| Older style              | Modern approach             |
+
+Example:
+```
+// Promise
+fetch().then().catch();
+
+// async/await
+try {
+  await fetch();
+} catch (e) {}
+```
+# 9️⃣ Microtask Queue vs Macrotask Queue
+| Microtask Queue   | Macrotask Queue           |
+| ----------------- | ------------------------- |
+| Promise callbacks | setTimeout, setInterval   |
+| Executed first    | Executed after microtasks |
+| Faster priority   | Lower priority            |
+
+👉 Order:
+Call Stack → Microtask → Macrotask
+# 🔟 What is Non-blocking I/O?
+Non-blocking I/O means:
+ - Node does not wait for I/O tasks
+ - It continues executing other code
+
+Example:
+
+```
+fs.readFile() // non-blocking
+```
+
+# 1️⃣ What is Middleware?
+Middleware is a function that runs:
+  - Before request reaches controller
+   - Between request & response
+Used for:
+   - Authentication
+   - Logging
+   - Validation
+
+Example:
+```
+app.use((req, res, next) => {
+  console.log("Middleware");
+  next();
+});
+```
+# 12️⃣ What is REPL?
+REPL stands for:
+ - Read
+ - Evaluate
+ - Print
+ - Loop
+It is an interactive Node shell used for testing code.
+
+Command:
+```
+node
+```
+
+# 13️⃣ What is Stream?
+Streams handle large data efficiently by processing it in chunks.
+Types:
+ - Readable
+ - Writable
+ - Duplex
+ - Transform
+
+Example:
+```
+fs.createReadStream("file.txt");
+```
+# 14️⃣ What is Buffer?
+Buffer is used to handle binary data directly in memory.
+
+Example:
+```
+const buf = Buffer.from("Hello");
+```
+Used in:
+File handling
+Streams
+Network data
+
+# 15️⃣ What is Clustering?
+Clustering allows Node to:
+ - Use multiple CPU cores
+ - Create multiple worker processes
+Improves:
+  - Performance
+  - Scalability
+✅ SECURITY & PERFORMANCE
+# 16️⃣ How to secure a Node.js app?
+ - Use HTTPS
+ - Hash passwords using bcrypt
+ - Use JWT for authentication
+ - Validate inputs
+ - Use Helmet for security headers
+ - Hide secrets using .env
+
+# 17️⃣ What is Rate Limiting?
+Rate limiting restricts:
+ - Number of requests per user/IP
+Used to prevent:
+ - DDoS attacks
+ - API abuse
+Example:

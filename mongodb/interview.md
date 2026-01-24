@@ -302,7 +302,7 @@ db.users.deleteOne({name:"A"})
 ```
 .find({}, {name:1})
 ```
-🔵 INDEXING (31–40)
+# 🔵 INDEXING (31–40)
 
 31. What is index?
 → Improves search speed
@@ -337,7 +337,7 @@ createIndex(), dropIndex()
 ```
 .explain()
 ```
-🟣 AGGREGATION (41–50)
+# 🟣 AGGREGATION (41–50)
 
 41. Aggregation?
 → Data processing pipeline
@@ -401,7 +401,7 @@ createIndex(), dropIndex()
 60. Large datasets?
 → Sharding
 
-🟤 TRANSACTIONS (61–66)
+# 🟤 TRANSACTIONS (61–66)
 
 61. Transactions supported?
 → Yes (v4+)
@@ -421,7 +421,7 @@ createIndex(), dropIndex()
 66. Limitations?
 → Slower, complex
 
-⚫ REPLICATION & SHARDING (67–75)
+# ⚫ REPLICATION & SHARDING (67–75)
 
 67. Replication?
 → Data copies
@@ -449,7 +449,8 @@ createIndex(), dropIndex()
 
 75. Replication vs sharding?
 → Availability vs scalability
-🟢 BACKEND INTEGRATION (76–85)
+
+# 🟢 BACKEND INTEGRATION (76–85)
 
 76. Connect Node.js?
 ```
@@ -481,7 +482,7 @@ mongoose.connect(url)
 
 85. Prevent injection?
 → Validate inputs
-🔵 PERFORMANCE & SECURITY (86–95)
+# 🔵 PERFORMANCE & SECURITY (86–95)
 
 86. Optimize queries?
 → Indexing
@@ -513,7 +514,7 @@ mongoose.connect(url)
 95. Common issues?
 → Missing indexes
 
-⭐ SCENARIO BASED (96–100)
+# ⭐ SCENARIO BASED (96–100)
 
 96. Choose MongoDB over SQL?
 → Flexible schema, big data

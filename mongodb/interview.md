@@ -212,26 +212,26 @@ Chat App Design
 ```
 4. What is a collection?
 → Group of documents (like table)
-
+****
 5. MongoDB vs MySQL?
 → Schema-less vs fixed schema
-
+****
 6. What is BSON?
 → Binary JSON (faster + more data types)
-
+****
 7. Why schema-less?
 → Flexible structure, easy scaling
-
+****
 8. What is _id?
 → Unique primary key
-
+****
 9. MongoDB data types?
 → String, Number, Array, ObjectId, Date
-
+****
 10. How data stored internally?
 → BSON format
-
-🟡 CRUD (11–20)
+****
+# 🟡 CRUD (11–20)
 
 11. Insert data?
 ```
@@ -239,7 +239,7 @@ Chat App Design
 ```
 12. insertOne vs insertMany?
 → Single vs multiple docs
-
+****
 13. Read data?
 ```
 db.users.find()
@@ -253,34 +253,34 @@ db.users.updateOne({name:"A"},{$set:{age:23}})
 ```
 16. updateOne vs updateMany?
 → One vs multiple docs
-
+****
 17. $set?
 → Updates specific field
-
+****
 18. Delete document?
 ```
 db.users.deleteOne({name:"A"})
 ```
 19. deleteOne vs deleteMany?
 → One vs many
-
+****
 20. If update condition fails?
 → No change (unless upsert)
 
-🟠 QUERY & OPERATORS (21–30)
+# 🟠 QUERY & OPERATORS (21–30)
 
 21. Comparison operators?
 → $gt,$lt,$gte,$lte,$eq
-
+****
 22. Logical operators?
 → $and,$or,$not
-
+****
 23. $and vs $or?
 → All true vs any true
-
+****
 24. $in / $nin?
 → Match inside / outside list
-
+****
 25. $exists?
 → Field exists or not
 26. $regex?

@@ -1,9 +1,9 @@
 # 🟢 BASIC (Freshers / Service Companies)
 (TCS, Infosys, Wipro, Accenture, Capgemini)
-1.What is React?
-2.Why React is faster than traditional JS?
-3.What is JSX?
-4.Difference between HTML vs JSX
+1. What is React?
+2. Why React is faster than traditional JS?
+3. What is JSX?
+4 .Difference between HTML vs JSX
 5. What is a component?
 6.Functional vs Class components
 7.What are props?

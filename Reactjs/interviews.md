@@ -21,7 +21,7 @@
 19. What is default export vs named export?
 20. What is strict mode?
 
-🟡 INTERMEDIATE
+# 🟡 INTERMEDIATE
 ⚡ Hooks
 1. What are hooks?
 2. Why hooks were introduced?

@@ -329,3 +329,260 @@ import { App } from "./App";
 </React.StrictMode>
 ```
 ********
+# 2️⃣1️⃣ What are Hooks?
+📌 Theory
+Hooks are special functions that let you use state and lifecycle features in functional components.
+
+👉 Before hooks → only class components had state
+👉 After hooks → functional components do everything
+Common Hooks:
+- useState
+- useEffect
+- useRef
+- useMemo
+- useCallback
+- useContext
+
+# 2️⃣2️⃣ Why Hooks Were Introduced?
+📌 Problems with Class Components
+
+❌  Too much boilerplate
+❌  this confusion
+❌  Hard to reuse logic
+❌  Lifecycle methods are complex
+
+# ✅ Hooks Advantages
+
+✔  Clean code
+✔  No this
+✔  Logic reuse via custom hooks
+✔  Easier testing 
+
+ # 2️⃣3️⃣ Rules of Hooks ❗ (Very Important)
+📌 Rules
+1. Call hooks only at top level
+2. Call hooks only inside React function components
+3. Do NOT call hooks inside loops, conditions, or nested functions
+
+❌ Wrong:
+```
+if (x > 0) {
+  useState(0);
+}
+```
+✅ Correct:'
+```
+const [count, setCount] = useState(0);
+```
+# 2️⃣4️⃣ useState Hook
+📌 Theory
+useState is used to create and update state.
+
+Syntax:
+```
+const [state, setState] = useState(initialValue);
+```
+# 💻 Counter Example
+```
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <h2>{count}</h2>
+      <button onClick={() => setCount(count + 1)}>+</button>
+      <button onClick={() => setCount(count - 1)}>-</button>
+    </>
+  );
+}
+```
+👉 State change → component re-renders
+
+# 2️⃣5️⃣ useEffect Hook (🔥 MOST IMPORTANT)
+📌 Theory
+useEffect is used for side effects:
+- API calls
+- DOM manipulation
+- Timers
+- Subscriptions
+
+It replaces:
+- componentDidMount
+- componentDidUpdate
+- componentWillUnmount
+
+📌 Syntax
+
+```
+useEffect(() => {
+  // side effect
+}, [dependency]);
+```
+# 2️⃣6️⃣ useEffect with Different Cases
+✅ 1. Runs on Every Render
+```
+useEffect(() => {
+  console.log("Rendered");
+});
+```
+ ✅ 2. Runs Only Once (componentDidMount)
+ ```
+useEffect(() => {
+  console.log("Mounted");
+}, []);
+```
+✅ 3. Runs When Dependency Changes
+```
+useEffect(() => {
+  console.log("Count changed");
+}, [count]);
+```
+# 2️⃣7️⃣ Cleanup Function in useEffect
+📌 Theory
+Cleanup runs when:
+- Component unmounts
+- Dependency changes
+
+Used for:
+- Clearing timers
+- Removing event listeners
+
+💻 Example
+```
+useEffect(() => {
+  const timer = setInterval(() => {
+    console.log("Running...");
+  }, 1000);
+
+  return () => {
+    clearInterval(timer);
+  };
+}, []);
+```
+
+# 2️⃣8️⃣ useEffect vs useLayoutEffect
+| useEffect        | useLayoutEffect   |
+| ---------------- | ----------------- |
+| Async            | Sync              |
+| Runs after paint | Runs before paint |
+| Non-blocking     | Blocking          |
+| Preferred        | Rare cases        |
+
+# 💻 useLayoutEffect Example
+```
+useLayoutEffect(() => {
+  console.log("DOM measured");
+}, []);
+```
+# 2️⃣9️⃣ useRef Hook
+📌 Theory
+useRef is used to:
+1. Access DOM directly
+2. Store mutable value without re-render
+
+💻 DOM Access Example
+```
+import { useRef } from "react";
+
+function InputFocus() {
+  const inputRef = useRef();
+
+  return (
+    <>
+      <input ref={inputRef} />
+      <button onClick={() => inputRef.current.focus()}>
+        Focus
+      </button>
+    </>
+  );
+}
+```
+# 💡 Difference: useRef vs useState
+| useRef       | useState         |
+| ------------ | ---------------- |
+| No re-render | Causes re-render |
+| Mutable      | Immutable        |
+| Used for DOM | Used for UI      |
+
+# 3️⃣0️⃣ useMemo Hook
+📌 Theory
+useMemo is used to memoize expensive calculations.
+
+👉 Prevents recalculating value on every render.
+
+💻 Example
+```
+import { useMemo } from "react";
+
+function ExpensiveCalc({ num }) {
+  const result = useMemo(() => {
+    console.log("Calculating...");
+    return num * 100;
+  }, [num]);
+
+  return <h2>{result}</h2>;
+}
+```
+# 3️⃣1️⃣ useCallback Hook
+📌 Theory
+useCallback memoizes functions.
+
+👉 Used when passing functions to child components.
+
+💻 Example
+```
+const handleClick = useCallback(() => {
+  console.log("Clicked");
+}, []);
+```
+# 3️⃣2️⃣ useMemo vs useCallback
+| useMemo        | useCallback       |
+| -------------- | ----------------- |
+| Memoizes value | Memoizes function |
+| Returns value  | Returns function  |
+| Performance    | Performance       |
+
+
+# 3️⃣3️⃣ React.memo
+📌 Theory
+React.memo prevents unnecessary re-render of child component.
+
+💻 Example
+```
+const Child = React.memo(({ value }) => {
+  console.log("Child Rendered");
+  return <p>{value}</p>;
+});
+```
+# 3️⃣4️⃣ Custom Hooks
+📌 Theory
+Custom hook = reusable logic
+Rules:
+- Name starts with use
+- Can use other hooks
+
+💻 Example: useCounter Hook
+```
+import { useState } from "react";
+
+function useCounter(initialValue = 0) {
+  const [count, setCount] = useState(initialValue);
+
+  const increment = () => setCount(count + 1);
+  const decrement = () => setCount(count - 1);
+
+  return { count, increment, decrement };
+}
+```
+# 💻 Usage
+```
+const { count, increment, decrement } = useCounter();
+```
+# 3️⃣5️⃣ Why Custom Hooks?
+
+✔  Code reuse
+✔  Clean components
+✔  Better separation of logic
+
